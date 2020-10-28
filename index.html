@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="topNav">
+  <h1>My Library:</h1>
+  </div>
+<div id="topSubNav">
+  <p>
+    Hey friend! Welcome to your personal library, where you can store books that you've read, are reading, or are waiting to read.<br>
+    Simply add your books below, and it will be stored locally (even if you refresh the page!).<br>
+    <br><b>Add a new book below:</b>
+  </p>
+  </div>
+<div id="pageWrapper">
+<div id = "newBookFormDiv">
+  <form name="newBookForm"  id="newBookForm">
+<label for="bName">Book name:</label><br>
+<input type = "text" id = "bName" name="bName" value="The Hobbit"><br>
+<label for="bAuthor">Author:</label><br>
+<input type = "text" id = "bAuthor" name="bAuthor" value="J. R. R. Tolkien"><br>
+<label for="noPages">Number of pages:</label><br>
+<input type = "text" id = "noPages" name="noPages" value="310"><br>
+<label for="readBooks">Have you read the book?</label><br>
+<input type="radio" id="read" name="readBooks" value="read">
+  <label for="read">Read</label><br>
+<input type="radio" id="inProgress" name="readBooks" value="In Progress">
+  <label for="inProgress">In progress</label><br>
+<input type="radio" id="notRead" name="readBooks" value="Not Read">
+  <label for="notRead">Not read</label><br>
+<input type="submit" value="Submit" id="submitButton" name="submitButton">
+  </form>
+</div>
+  <div id="container">
+  </div>
+   </div> 
+  <div id="clearStorage">
+
+  <input type="button" id="clearStorageButton" value="Reset books">
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
