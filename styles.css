@@ -1,0 +1,85 @@
+.help-icon{
+    color: rgb(51, 145, 145);
+}
+
+.help-icon, .trash-icon, .plus-icon, .rewind-button{
+    height: 35px;
+    width: 35px;
+    fill: currentColor;
+    margin: 2px;
+}
+
+.help-icon:hover, .trash-icon:hover, .plus-icon:hover, .rewind-button:hover{
+    height: 36px;
+    width: 36px;
+    margin: 1.5px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+.help-icon:hover{
+    color: rgb(35, 122, 122);
+}
+
+.plus-icon{
+    color: rgb(58, 173, 102);
+}
+
+.plus-icon:hover{
+    color: rgb(40, 138, 77);
+}
+
+.trash-icon{
+    color: rgb(211, 96, 96);
+    margin-top: 4px;
+}
+
+.trash-icon:hover{
+    color: rgb(179, 67, 67);
+}
+
+.rewind-button{
+    margin: 4px 2px 2px 1px;
+    color: rgb(149, 79, 182);
+}
+
+.rewind-button:hover{
+    color: rgb(90, 59, 104);
+}
+
+.notRead {
+    background-color: rgb(245, 171, 171);
+}
+
+.inProgress {
+    background-color: rgb(250, 218, 149);
+}
+
+.read {
+    background-color: rgb(144, 221, 144);
+}
+
+.contain{
+    height: 87vh;
+}
+
+@media(max-width: 768px){
+    #nav-btn-container{
+        flex-direction: column!important;
+    }
+}
+
+@media(max-width: 576px){
+    #nav-btn-container{
+        flex-direction: row!important;
+    }
+
+    .contain{
+        height: 75vh;
+    }
+
+    #page-container{
+        margin: 0 10px 0 10px;
+        width: 98vw;
+    }
+}
